@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:visibility="visible"
+    tools:context="com.example.acer.lab_1_dashboard.MainActivity">
+
+    <TextView
+        android:id="@+id/txtWeather_App"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#eef2f3"
+        android:gravity="center"
+        android:text="Weather App"
+
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="0%"
+        app:layout_marginTopPercent="0%"
+        app:layout_widthPercent="100%" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:scaleType="fitXY"
+
+        android:src="@drawable/backhoa_icon"
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="0%"
+        app:layout_marginTopPercent="0%"
+        app:layout_widthPercent="13%" />
+    <SearchView
+        android:id="@+id/simpleSearchView"
+        android:background="@drawable/rounded_corner"
+        android:iconifiedByDefault="false"
+        android:queryHint="Enter region"
+        app:layout_heightPercent="10%"
+        app:layout_marginStartPercent="6%"
+        app:layout_marginTopPercent="10%"
+        app:layout_widthPercent="88%"/>
+    <TextView
+        android:id="@+id/txtRegion_view"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Hanoi - VietNam"
+
+        android:textSize="26dp"
+
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        app:layout_heightPercent="10%"
+        app:layout_marginStartPercent="1%"
+        app:layout_marginTopPercent="21%"
+        app:layout_widthPercent="100%"/>
+    <View
+
+        app:layout_marginStartPercent="15%"
+        app:layout_marginTopPercent="30%"
+        app:layout_widthPercent="70%"
+        android:layout_height="2dp"
+        android:background="#ffffff" />
+    <ToggleButton
+        android:id="@+id/btnLED"
+        android:background="@drawable/toggle_selector"
+        android:checked="false"
+        android:text=""
+        android:textOff=""
+
+        android:textOn=""
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="38%"
+        app:layout_marginTopPercent="85%"
+        app:layout_widthPercent="20%" />
+    <TextView
+        android:id="@+id/txtTemp"
+
+        android:gravity="center"
+        android:text="Temparature"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="5%"
+        app:layout_marginTopPercent="52%"
+        app:layout_widthPercent="90%" />
+    <ProgressBar
+        android:id="@+id/temp_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="15%"
+        app:layout_marginTopPercent="55%"
+        app:layout_widthPercent="70%"
+        android:textAlignment="center"
+        android:max="55"
+        android:min="-20"
+        android:progress="-20"
+        android:background="@drawable/temp_progress_bar"
+        android:progressTint="#E22F39"/>
+    <TextView
+        android:id="@+id/txtWind"
+
+        android:gravity="center"
+        android:text="Wind"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="5%"
+        app:layout_marginTopPercent="63%"
+        app:layout_widthPercent="90%" />
+    <ProgressBar
+        android:id="@+id/wind_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="15%"
+        app:layout_marginTopPercent="66%"
+        app:layout_widthPercent="70%"
+        android:textAlignment="center"
+        android:max="120"
+        android:min="0"
+        android:progress="0"
+        android:progressTint="#147DFB"/>
+    <TextView
+        android:id="@+id/txtHumid"
+        android:gravity="center"
+        android:text="Humidity"
+        android:textSize="18dp"
+        android:textStyle="bold"
+
+
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="5%"
+        app:layout_marginTopPercent="74%"
+        app:layout_widthPercent="90%" />
+    <ProgressBar
+        android:id="@+id/humi_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        app:layout_heightPercent="8%"
+        app:layout_marginStartPercent="15%"
+        app:layout_marginTopPercent="77%"
+        app:layout_widthPercent="70%"
+
+        android:textAlignment="center"
+        android:max="100"
+        android:min="0"
+        android:progress="0"
+        android:progressTint="#0D6299"/>
+    <ImageView
+        android:src="@drawable/temp_icon"
+
+        app:layout_heightPercent="17%"
+        app:layout_marginStartPercent="2%"
+        app:layout_marginTopPercent="50%"
+        app:layout_widthPercent="15%"
+        android:id="@+id/imageView2" />
+    <ImageView
+        android:src="@drawable/wind_icon"
+
+        app:layout_heightPercent="19%"
+        app:layout_marginStartPercent="1%"
+        app:layout_marginTopPercent="60%"
+        app:layout_widthPercent="13%"
+        android:id="@+id/imageView3" />
+    <ImageView
+        android:src="@drawable/humi_icon"
+
+        app:layout_heightPercent="19%"
+        app:layout_marginStartPercent="2%"
+        app:layout_marginTopPercent="71%"
+        app:layout_widthPercent="12%"
+        android:id="@+id/imageView"/>
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:src = "@drawable/humi_icon"
+        app:layout_heightPercent="37%"
+        app:layout_marginStartPercent="32%"
+        app:layout_marginTopPercent="24%"
+        app:layout_widthPercent="36%"
+        android:visibility="gone"/>
+    <ProgressBar
+        android:id="@+id/pausing_bar"
+        style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Large"
+        app:layout_heightPercent="22%"
+        app:layout_marginStartPercent="40%"
+        app:layout_marginTopPercent="32%"
+        app:layout_widthPercent="20%"
+        android:progressTint="#147DFB"
+        android:visibility="gone"/>
+    <TextView
+        android:gravity="center"
+        android:text="Swipe to view Graph"
+        android:textColor="#2980b9"
+        android:textStyle="bold"
+
+        app:layout_heightPercent="9%"
+        app:layout_marginStartPercent="5%"
+        app:layout_marginTopPercent="94%"
+        app:layout_widthPercent="90%"/>
+</android.support.percent.PercentRelativeLayout>
